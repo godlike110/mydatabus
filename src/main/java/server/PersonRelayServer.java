@@ -48,7 +48,7 @@ public class PersonRelayServer extends DatabusRelayMain {
     public static void main(String[] args) throws Exception
     {
         Cli cli = new Cli();
-        cli.setDefaultPhysicalSrcConfigFiles("conf/sources-person.json");
+        cli.setDefaultPhysicalSrcConfigFiles("conf/sources-or-person.json");
         cli.processCommandLineArgs(args);
         cli.parseRelayConfig();
         // Process the startup properties and load configuration
