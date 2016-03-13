@@ -21,7 +21,7 @@ import java.util.Map;
 public class PersonRelayServer extends DatabusRelayMain {
     public static final String MODULE = PersonRelayServer.class.getName();
     public static final Logger LOG = LoggerFactory.getLogger(PersonRelayServer.class);
-    static final String FULLY_QUALIFIED_PERSON_EVENT_NAME = "com.linkedin.events.example.person.Person";
+    static final String FULLY_QUALIFIED_PERSON_EVENT_NAME = "com.linkedin.events.or_test.Person";
     static final int PERSON_SRC_ID = 40;
 
     MultiServerSequenceNumberHandler _maxScnReaderWriters;
@@ -48,7 +48,7 @@ public class PersonRelayServer extends DatabusRelayMain {
     public static void main(String[] args) throws Exception
     {
         Cli cli = new Cli();
-        cli.setDefaultPhysicalSrcConfigFiles("conf/sources-or-person.json");
+     //   cli.setDefaultPhysicalSrcConfigFiles("conf/sources-or-person.json");
         cli.processCommandLineArgs(args);
         cli.parseRelayConfig();
         // Process the startup properties and load configuration
