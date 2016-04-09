@@ -22,7 +22,7 @@ public class PersonRelayServer extends DatabusRelayMain {
     public static final String MODULE = PersonRelayServer.class.getName();
     public static final Logger LOG = LoggerFactory.getLogger(PersonRelayServer.class);
     static final String FULLY_QUALIFIED_PERSON_EVENT_NAME = "com.linkedin.events.or_test.Person";
-    static final int PERSON_SRC_ID = 40;
+    static final int PERSON_SRC_ID = 1;
 
     MultiServerSequenceNumberHandler _maxScnReaderWriters;
     protected Map<PhysicalPartition, EventProducer> _producers;
